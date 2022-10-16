@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budgeteer</title>
     <link rel="stylesheet" href="/static/style.css">
-    <script src="/expenses.js"></script>
+    <script src="/expenses.js" defer></script>
 </head>
 
 <body>
@@ -39,8 +39,8 @@
                     <label class="row-label"><input type="number" name="amount" step="0.01"><span>Amount</span></label>
 
                     <div class="centered">
-                        <button class="action">Save</button>
-                        <button class="action">Cancel</button>
+                        <button class="action" id="save">Save</button>
+                        <button class="action" id="cancel">Cancel</button>
                     </div>
 
                 </fieldset>
@@ -90,6 +90,7 @@
         </section>
 
     </main>
+    
 </body>
 
 </html>
