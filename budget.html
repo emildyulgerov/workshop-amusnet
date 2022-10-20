@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budgeteer</title>
     <link rel="stylesheet" href="/static/style.css">
+    <script src="/budget.bundle.js" defer></script>
 </head>
 
 <body>
     <nav>
-        <a href="/dashboard.html">Dashboard</a>
+        <a href="/index.html">Dashboard</a>
         <a href="/expenses.html">Expenses</a>
         <a href="/summary.html">Summary</a>
         <a class="active">Budget</a>
@@ -24,13 +25,13 @@
             <form id="new-budget" class="clear">
                 <fieldset class="aligned">
                     <label class="row-label"><input type="text" name="month"
-                            placeholder="04-2018"><span>Month</span></label>
+                            placeholder="04-2018" pattern="\d{2}-\d{4}"><span>Month</span></label>
                     <label class="row-label"><input type="number" name="income" step="1"><span>Income</span></label>
                     <label class="row-label"><input type="number" name="budget" step="1"><span>Budget</span></label>
 
                     <div class="centered">
-                        <button class="action">Save</button>
-                        <button class="action">Cancel</button>
+                        <button type="submit" class="action">Save</button>
+                        <button type="reset" class="action">Cancel</button>
                     </div>
 
                 </fieldset>
